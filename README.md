@@ -1,4 +1,7 @@
 # ytDownloaderOpenVpnDocker
+
+For the extra slow download experience of ytDownloader behind a Vpn
+
 1. Build the iamge: docker image build -t ytdownloader .
 2. Add the config folder to your workingDir: mkdir config
 3. Add your personal OpenVpn config files to config folder --> see docker-compose-linux.yml

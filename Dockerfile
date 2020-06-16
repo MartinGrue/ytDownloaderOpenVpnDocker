@@ -32,7 +32,6 @@ ENV OPENVPN_USERNAME=**None** \
     OPENVPN_PROVIDER=**None** \
     DOCKER_LOG=false
 
-WORKDIR /downloads
+WORKDIR /data
 
-VOLUME ["/downloads"]
 CMD ["/etc/openvpn/start.sh"]
