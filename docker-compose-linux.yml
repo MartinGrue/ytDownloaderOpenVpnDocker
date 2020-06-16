@@ -1,0 +1,21 @@
+version: "2"
+services:
+  ytdownloader:
+    image: ytdownloader
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - /dev/net/tun
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    volumes:
+      - ./config/openvpn.ovpn:/etc/openvpn/custom/default.ovpn
+      - ./config/ca.crt:/etc/openvpn/easy-rsa/keys/ca.crt
+      - ./config/client.crt:/etc/openvpn/easy-rsa/keys/client.crt
+      - ./config/client.key:/etc/openvpn/easy-rsa/keys/client.key
+      - ./config/auth.txt:/etc/openvpn/easy-rsa/keys/auth.txt
+      - ./data:/data
+    environment:
+      - OPENVPN_PROVIDER=CUSTOM
+      - LOCAL_NETWORK=192.168.0.0/24

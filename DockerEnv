@@ -1,0 +1,7 @@
+#Remove # for variables you want to use
+#OPENVPN_PROVIDER=
+#OPENVPN_CONFIG=
+#OPENVPN_OPTS=--inactive 3600 --ping 10 --ping-exit 60
+#LOCAL_NETWORK=
+#GLOBAL_APPLY_PERMISSIONS=true
+#DOCKER_LOG=false
