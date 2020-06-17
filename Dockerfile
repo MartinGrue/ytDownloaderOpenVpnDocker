@@ -11,7 +11,7 @@ RUN apt-get update \
     && apt-get -y install apt-utils software-properties-common wget git curl jq gpg\
     && apt-get update \
     && apt install -y sudo curl rar unrar zip unzip ufw iputils-ping openvpn bc tzdata bash \
-    && apt install -y ffmpeg python \
+    && apt install -y ffmpeg python geoip-bin\
     && curl -Lo /usr/local/bin/youtube-dl https://yt-dl.org/downloads/latest/youtube-dl \
     && curl -Lo youtube-dl.sig https://yt-dl.org/downloads/latest/youtube-dl.sig \
     && gpg --keyserver keyserver.ubuntu.com --recv-keys '7D33D762FD6C35130481347FDB4B54CBA4826A18' \
