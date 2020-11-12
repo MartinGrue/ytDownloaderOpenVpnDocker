@@ -1,7 +1,9 @@
 version: "2"
 services:
   ytdownloader:
-    image: ytdownloader
+    build:
+      context: .
+      dockerfile: Dockerfile
     cap_add:
       - NET_ADMIN
     devices:

@@ -1,4 +1,4 @@
-FROM ubuntu:19.10
+FROM ubuntu
 
 VOLUME /data
 ARG DOCKERIZE_ARCH=amd64
