@@ -1,0 +1,2 @@
+youtube-dl -x --audio-format mp3 --ignore-errors --download-archive archive.txt {url}
+youtube-dl -x --audio-format mp3 --ignore-errors {url}
